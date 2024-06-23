@@ -1,0 +1,2 @@
+# YouTube-Predictive-Analysis-Insights-from-Top-500-Channels
+This project analyzes data from the top 500 YouTube channels by subscribers. It explores trends in subscriber counts, viewership, and channel categories using exploratory data analysis and visualization. Predictive modeling is used to estimate subscribers based on video counts and views, providing insights into channel popularity factors.
