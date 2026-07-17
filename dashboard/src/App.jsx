@@ -18,7 +18,7 @@ export default function App() {
         </div>
         <div className="topbar__right">
           <span className="live-chip"><span className="live-dot" /> 500 CHANNELS &middot; LIVE ANALYSIS</span>
-          
+          <a
             className="nav__link"
             href="https://github.com/ashwinm656/YouTube-Predictive-Analysis-Insights-from-Top-500-Channels"
             target="_blank" rel="noreferrer"
