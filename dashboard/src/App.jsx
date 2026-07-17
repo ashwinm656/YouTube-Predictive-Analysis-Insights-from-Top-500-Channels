@@ -11,7 +11,7 @@ export default function App() {
       <header className="hero">
         <nav className="nav">
           <span className="nav__mark"><span className="play-mark" aria-hidden="true" /> YouTube Analytics &middot; Recap</span>
-          
+          <a
             className="nav__link"
             href="https://github.com/ashwinm656/YouTube-Predictive-Analysis-Insights-from-Top-500-Channels"
             target="_blank" rel="noreferrer"
