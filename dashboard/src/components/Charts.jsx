@@ -146,12 +146,11 @@ export function CorrelationHeatmap() {
   const labels = { RANK: 'Rank', TOTAL_NUMBER_OF_VIDEOS: 'Videos', SUBSCRIBERS: 'Subscribers', VIEWS: 'Views' };
 
   function colorFor(v) {
-    // v in [-1, 1]; positive -> crimson, negative -> teal
     const abs = Math.min(Math.abs(v), 1);
     if (v >= 0) {
-      return `rgba(230, 57, 74, ${0.12 + abs * 0.65})`;
+      return `rgba(255, 0, 0, ${0.12 + abs * 0.65})`;
     }
-    return `rgba(45, 212, 191, ${0.12 + abs * 0.65})`;
+    return `rgba(170, 170, 170, ${0.12 + abs * 0.55})`;
   }
 
   return (
