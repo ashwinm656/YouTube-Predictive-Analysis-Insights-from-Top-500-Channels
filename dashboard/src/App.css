@@ -375,7 +375,7 @@
   border-bottom: 1px solid var(--line-soft);
   color: var(--text-primary);
 }
-.table tr:hover td { background: rgba(255,255,255,0.02); }
+.table tr:hover td { background: rgba(0,0,0,0.025); }
 .table__category { color: var(--text-muted); font-size: 12px; }
 .table__subs { color: var(--accent-crimson); }
 
