@@ -103,7 +103,7 @@ export function ViewsScatter() {
               );
             }}
           />
-          <Scatter data={data} fill="var(--accent-teal)" fillOpacity={0.55} />
+          <Scatter data={data} fill="var(--accent-crimson)" fillOpacity={0.45} />
         </ScatterChart>
       </ResponsiveContainer>
       <p className="chart-panel__note">Views and subscribers trend together, but loosely &mdash; the spread is exactly why the model below tops out around R&sup2; &asymp; 0.27.</p>
@@ -118,7 +118,7 @@ export function CategoryBar() {
     .sort((a, b) => b[1] - a[1])
     .slice(0, 10)
     .map(([category, count]) => ({ category, count }));
-  const colors = ['var(--accent-crimson)', 'var(--accent-amber)', 'var(--accent-teal)'];
+  const colors = ['#FF0000', '#E11414', '#C62828', '#B23A48', '#8E2434', '#D9636B', '#F08A8F', '#7A1E1E', '#F4A5A9', '#5C1414'];
 
   return (
     <div className="chart-panel">
@@ -148,9 +148,12 @@ export function CorrelationHeatmap() {
   function colorFor(v) {
     const abs = Math.min(Math.abs(v), 1);
     if (v >= 0) {
-      return `rgba(255, 0, 0, ${0.12 + abs * 0.65})`;
+      return `hsl(0, 85%, ${92 - abs * 62}%)`;
     }
-    return `rgba(170, 170, 170, ${0.12 + abs * 0.55})`;
+    return `hsl(210, 12%, ${92 - abs * 45}%)`;
+  }
+  function textColorFor(v) {
+    return Math.abs(v) > 0.45 ? '#fff' : '#3F3F3F';
   }
 
   return (
@@ -173,7 +176,7 @@ export function CorrelationHeatmap() {
                 <div
                   key={ck}
                   className="heatmap__cell heatmap__cell--val mono"
-                  style={{ background: colorFor(v) }}
+                  style={{ background: colorFor(v), color: textColorFor(v) }}
                   title={`${labels[rk]} vs ${labels[ck]}: ${v}`}
                 >
                   {v.toFixed(2)}
