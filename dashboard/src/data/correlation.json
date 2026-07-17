@@ -1,0 +1,26 @@
+{
+  "RANK": {
+    "RANK": 1.0,
+    "TOTAL_NUMBER_OF_VIDEOS": -0.123,
+    "SUBSCRIBERS": -0.637,
+    "VIEWS": -0.464
+  },
+  "TOTAL_NUMBER_OF_VIDEOS": {
+    "RANK": -0.123,
+    "TOTAL_NUMBER_OF_VIDEOS": 1.0,
+    "SUBSCRIBERS": 0.11,
+    "VIEWS": 0.189
+  },
+  "SUBSCRIBERS": {
+    "RANK": -0.637,
+    "TOTAL_NUMBER_OF_VIDEOS": 0.11,
+    "SUBSCRIBERS": 1.0,
+    "VIEWS": 0.778
+  },
+  "VIEWS": {
+    "RANK": -0.464,
+    "TOTAL_NUMBER_OF_VIDEOS": 0.189,
+    "SUBSCRIBERS": 0.778,
+    "VIEWS": 1.0
+  }
+}

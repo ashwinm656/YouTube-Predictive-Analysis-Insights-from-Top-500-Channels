@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap');
+
+:root {
+  --bg-void: #0c0d12;
+  --bg-panel: #15171f;
+  --bg-panel-raised: #1b1e28;
+  --line: #2a2d3a;
+  --line-soft: #1f2129;
+  --text-primary: #f1f2f6;
+  --text-muted: #8b8fa3;
+  --text-dim: #565a6c;
+  --accent-crimson: #e6394a;
+  --accent-crimson-dim: #7a2029;
+  --accent-amber: #f4a620;
+  --accent-teal: #2dd4bf;
+
+  --font-display: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-void);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+#root {
+  min-height: 100vh;
+  background:
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(230, 57, 74, 0.08), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(45, 212, 191, 0.06), transparent 60%),
+    var(--bg-void);
+}
+
+a { color: inherit; }
+
+::selection {
+  background: var(--accent-crimson);
+  color: #fff;
+}
+
+.mono { font-family: var(--font-mono); }
+
+button, input {
+  font-family: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent-amber);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; }
+}
