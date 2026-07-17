@@ -1,22 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap');
 
 :root {
-  --bg-void: #ffffff;
-  --bg-panel: #f9f9f9;
-  --bg-panel-raised: #f2f2f2;
-  --line: #e5e5e5;
-  --line-soft: #ededed;
+  --bg-void: #f7f7f8;
+  --bg-panel: #ffffff;
+  --bg-panel-raised: #f1f1f1;
+  --line: #ececec;
+  --line-soft: #f1f1f1;
   --text-primary: #0f0f0f;
   --text-muted: #606060;
   --text-dim: #909090;
+
   --accent-crimson: #ff0000;
+  --accent-crimson-deep: #cc0000;
+  --accent-crimson-dark: #a60000;
+  --accent-crimson-tint: #fff1f1;
+  --accent-crimson-tint2: #ffe2e2;
   --accent-crimson-dim: #ffd6d6;
   --accent-amber: #0f0f0f;
   --accent-teal: #606060;
+  --accent-green: #1e9e5a;
+  --accent-green-tint: #e7f8ee;
+
+  --radius: 14px;
+  --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 6px 20px rgba(0, 0, 0, 0.05);
 
   --font-display: 'Roboto', sans-serif;
   --font-body: 'Roboto', sans-serif;
-  --font-mono: 'Roboto Mono', monospace;
+  --font-mono: 'Roboto Condensed', sans-serif;
 }
 
 * { box-sizing: border-box; }
@@ -32,10 +42,7 @@ html, body {
 
 #root {
   min-height: 100vh;
-  background:
-    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255, 0, 0, 0.05), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(0, 0, 0, 0.02), transparent 60%),
-    var(--bg-void);
+  background: var(--bg-void);
 }
 
 a { color: inherit; }
@@ -52,7 +59,7 @@ button, input {
 }
 
 :focus-visible {
-  outline: 2px solid var(--accent-amber);
+  outline: 2px solid var(--accent-crimson-deep);
   outline-offset: 2px;
 }
 
