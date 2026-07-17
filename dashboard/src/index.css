@@ -1,18 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Mono:wght@400;500;700&display=swap');
 
 :root {
-  --bg-void: #0f0f0f;
-  --bg-panel: #181818;
-  --bg-panel-raised: #212121;
-  --line: #303030;
-  --line-soft: #272727;
-  --text-primary: #ffffff;
-  --text-muted: #aaaaaa;
-  --text-dim: #717171;
+  --bg-void: #ffffff;
+  --bg-panel: #f9f9f9;
+  --bg-panel-raised: #f2f2f2;
+  --line: #e5e5e5;
+  --line-soft: #ededed;
+  --text-primary: #0f0f0f;
+  --text-muted: #606060;
+  --text-dim: #909090;
   --accent-crimson: #ff0000;
-  --accent-crimson-dim: #7f0000;
-  --accent-amber: #ffffff;
-  --accent-teal: #aaaaaa;
+  --accent-crimson-dim: #ffd6d6;
+  --accent-amber: #0f0f0f;
+  --accent-teal: #606060;
 
   --font-display: 'Roboto', sans-serif;
   --font-body: 'Roboto', sans-serif;
@@ -33,8 +33,8 @@ html, body {
 #root {
   min-height: 100vh;
   background:
-    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255, 0, 0, 0.10), transparent 60%),
-    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(255, 255, 255, 0.03), transparent 60%),
+    radial-gradient(ellipse 900px 500px at 15% -10%, rgba(255, 0, 0, 0.05), transparent 60%),
+    radial-gradient(ellipse 700px 500px at 100% 0%, rgba(0, 0, 0, 0.02), transparent 60%),
     var(--bg-void);
 }
 
