@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;600;700&family=Roboto+Mono:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Roboto+Condensed:wght@400;600;700;900&display=swap');
 
 :root {
-  --bg-void: #f7f7f8;
+  --bg-void: #ffffff;
   --bg-panel: #ffffff;
   --bg-panel-raised: #f1f1f1;
   --line: #ececec;
@@ -15,16 +15,14 @@
   --accent-crimson-dark: #a60000;
   --accent-crimson-tint: #fff1f1;
   --accent-crimson-tint2: #ffe2e2;
-  --accent-crimson-dim: #ffd6d6;
   --accent-amber: #0f0f0f;
   --accent-teal: #606060;
   --accent-green: #1e9e5a;
-  --accent-green-tint: #e7f8ee;
 
-  --radius: 14px;
+  --ink: #0b0b0b;
   --shadow-card: 0 1px 2px rgba(0, 0, 0, 0.04), 0 6px 20px rgba(0, 0, 0, 0.05);
 
-  --font-display: 'Roboto', sans-serif;
+  --font-display: 'Roboto Condensed', sans-serif;
   --font-body: 'Roboto', sans-serif;
   --font-mono: 'Roboto Condensed', sans-serif;
 }
